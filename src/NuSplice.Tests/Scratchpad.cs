@@ -2,7 +2,7 @@
 using Xunit;
 using Xunit.Abstractions;
 
-namespace NuCrunch.Tests
+namespace NuSplice.Tests
 {
 	public class Scratchpad
 	{

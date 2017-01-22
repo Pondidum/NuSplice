@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuCrunch", "src\NuCrunch\NuCrunch.csproj", "{DAC4114D-D522-4805-9F97-3CD16857C1B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuSplice", "src\NuSplice\NuSplice.csproj", "{DAC4114D-D522-4805-9F97-3CD16857C1B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuCrunch.Tests", "src\NuCrunch.Tests\NuCrunch.Tests.csproj", "{69B7D1A8-07D2-4464-BA5D-C28E53B68DF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuSplice.Tests", "src\NuSplice.Tests\NuSplice.Tests.csproj", "{69B7D1A8-07D2-4464-BA5D-C28E53B68DF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
