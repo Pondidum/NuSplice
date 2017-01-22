@@ -7,7 +7,7 @@ bin
 
 project.lock.json
 
-/src/packages
+/packages
 /node_modules
 /.vs
 /.idea
