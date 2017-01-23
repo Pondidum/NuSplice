@@ -34,10 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Commands" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="CommandLocator.cs" />
+    <Compile Include="Commands\InstallCommand.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>

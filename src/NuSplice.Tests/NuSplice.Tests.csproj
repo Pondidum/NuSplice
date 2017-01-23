@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandLocatorTests.cs" />
+    <Compile Include="Commands\InstallCommandTests.cs" />
+    <Compile Include="Commands\TestFor.cs" />
     <Compile Include="Scratchpad.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
