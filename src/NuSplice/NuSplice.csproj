@@ -37,6 +37,7 @@
     <Folder Include="Commands" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandLocator.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
