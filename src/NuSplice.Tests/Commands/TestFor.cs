@@ -13,7 +13,7 @@ namespace NuSplice.Tests.Commands
 		}
 
 		protected IEnumerable<IEvent> Events => Command.GetPendingEvents();
-		protected IEvent SingleEvent => Command.GetPendingEvents().Single();
+		protected TEvent SingleEvent<TEvent>() => (TEvent)Command.GetPendingEvents().Single();
 
 		protected void Execute(params string[] args)
 		{
