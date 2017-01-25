@@ -1,8 +1,8 @@
 ﻿namespace NuSplice.Commands
 {
-	public class InstallCommand : ICommand
+	public class InstallCommand : Command
 	{
-		public void Execute(CommandModel model)
+		public override void Execute(CommandModel model)
 		{
 			throw new System.NotImplementedException();
 		}

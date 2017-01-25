@@ -1,6 +1,6 @@
 ﻿namespace NuSplice.Tests.Commands
 {
-	public abstract class TestFor<TCommand> where TCommand : ICommand, new()
+	public abstract class TestFor<TCommand> where TCommand : Command, new()
 	{
 		public TCommand Command { get; private set; }
 

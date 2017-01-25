@@ -9,7 +9,7 @@ namespace NuSplice
 		private readonly Type[] _types;
 
 		public CommandLocator()
-			: this(typeof(ICommand).Assembly.GetTypes())
+			: this(typeof(Command).Assembly.GetTypes())
 		{
 		}
 
@@ -20,10 +20,10 @@ namespace NuSplice
 
 		public IEnumerable<Type> Execute()
 		{
-			var commandInterface = typeof(ICommand);
+			var commandBase = typeof(Command);
 
 			return _types
-				.Where(t => t.IsClass && t.IsAbstract == false && commandInterface.IsAssignableFrom(t))
+				.Where(t => t.IsClass && t.IsAbstract == false && commandBase.IsAssignableFrom(t))
 				.Where(t => t.GetConstructor(Type.EmptyTypes) != null);
 		}
 	}

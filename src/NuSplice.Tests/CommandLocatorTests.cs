@@ -39,29 +39,29 @@ namespace NuSplice.Tests
 			ForTypes(typeof(ImplementsAbstract)).ShouldBeEmpty();
 		}
 
-		private class ImplementsConstructable : ICommand
+		private class ImplementsConstructable : Command
 		{
-			public void Execute(CommandModel model)
+			public override void Execute(CommandModel model)
 			{
 				throw new NotImplementedException();
 			}
 		}
 
-		private class ImplementsNonConstructable : ICommand
+		private class ImplementsNonConstructable : Command
 		{
 			private ImplementsNonConstructable()
 			{
 			}
 
-			public void Execute(CommandModel model)
+			public override void Execute(CommandModel model)
 			{
 				throw new NotImplementedException();
 			}
 		}
 
-		private abstract class ImplementsAbstract : ICommand
+		private abstract class ImplementsAbstract : Command
 		{
-			public void Execute(CommandModel model)
+			public override void Execute(CommandModel model)
 			{
 				throw new NotImplementedException();
 			}

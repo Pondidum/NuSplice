@@ -11,7 +11,7 @@ namespace NuSplice
 			var commands = locator.Execute();
 
 			var type = commands.First(t => t.Name.StartsWith(args[0]));
-			var command = (ICommand)type.GetConstructor(Type.EmptyTypes).Invoke(new object[0]);
+			var command = (Command)type.GetConstructor(Type.EmptyTypes).Invoke(new object[0]);
 
 			command.Execute(new CommandModel
 			{
